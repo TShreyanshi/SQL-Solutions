@@ -1,4 +1,4 @@
-Using LEFT Function:
+Using LEFT and RIGHT Function:
 > Use DISTINCT, for unique city
 > > Left(city,1) gets the first element from the city  
 > > right(city,1) gets the last element from the city
