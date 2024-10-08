@@ -1,27 +1,14 @@
-Using LIKE funtion with NOT;
+Using LIKE funtion:
 
 ```
-select DISTINCT city from station
-where city NOT LIKE 'a%'
-AND city NOT LIKE 'e%'
-AND city NOT LIKE 'i%'
-AND city NOT LIKE 'o%'
-AND city NOT LIKE 'u%';
+SELECT DISTINCT CITY
+FROM STATION
+WHERE( CITY LIKE 'A%' OR CITY LIKE 'E%' OR CITY LIKE 'I%' OR CITY LIKE 'O%' 
+OR CITY LIKE 'U%') 
+AND (CITY LIKE '%A' OR CITY LIKE '%E' OR CITY LIKE '%I' OR CITY LIKE '%O' 
+OR CITY LIKE '%U');
 ```
 
->This question Automatically deals with case sensitivity, but in general sql is case-sensitive so the correct approach would be:
+>HackerRank handles the case sensitivity 
 
-```
-SELECT DISTINCT city 
-FROM station 
-WHERE city NOT LIKE 'A%' 
-  AND city NOT LIKE 'E%' 
-  AND city NOT LIKE 'I%' 
-  AND city NOT LIKE 'O%' 
-  AND city NOT LIKE 'U%' 
-  AND city NOT LIKE 'a%' 
-  AND city NOT LIKE 'e%' 
-  AND city NOT LIKE 'i%' 
-  AND city NOT LIKE 'o%' 
-  AND city NOT LIKE 'u%';
-```
+
