@@ -1,14 +1,11 @@
 Using REGEXP function:
 > ^ for start character  
-> $ for end character  
-> . for any 1 character  
-> .* for multiple number of any characters
+> $ for end character
 
 ```
-select distinct city
-from station
-where city NOT REGEXP '^[aeiou].*[aeiou]$';
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY NOT REGEXP '^[AEIOUaeiou]' 
+   OR CITY NOT REGEXP '[AEIOUaeiou]$';
 ```
 
-> NOTE!!!  
-> For this question, Hackerrank handles the case sensitivity
