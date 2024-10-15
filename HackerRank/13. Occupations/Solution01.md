@@ -14,3 +14,6 @@ FROM (
 GROUP BY row_num
 ORDER BY row_num;
 ```
+
+Explanation Link:
+[https://www.notion.so/Occupations-HackerRank-11fcc9cdbdd680699835f2f96a841b47?pvs=](https://www.notion.so/Occupations-HackerRank-11fcc9cdbdd680699835f2f96a841b47)
