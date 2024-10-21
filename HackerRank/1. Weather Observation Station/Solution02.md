@@ -1,6 +1,6 @@
 Using LIKE with Wildcards:
 
-```
+```sql
 SELECT DISTINCT city
 FROM station
 WHERE city LIKE 'a%' OR city LIKE 'e%' 
